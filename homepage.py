@@ -25,9 +25,7 @@ html = '''
 	    <script src="http://projectchronos.org/static/assets/javascript/libs/jquery-1.11.1.min.js"></script>
 
         <style>
-        nav > ul > li:after {
-            content:none;
-        }
+
         </style>
 </head>
 <body>
