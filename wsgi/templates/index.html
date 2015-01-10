@@ -1,6 +1,3 @@
-__author__ = 'lorenzo'
-
-html = '''
 
 <!DOCTYPE HTML>
 <!--[if IE 8 ]><html class="ie ie8" lang="it"> <![endif]-->
@@ -17,12 +14,12 @@ html = '''
 	    <meta name="description" content="explore space planets star journey satellites exploration solar system simulation play learning NASA ESA JAXA spacecraft scientific payload bus sensor maps rocket">
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="http://projectchronos.org/static/assets/images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="http://projectchronos.org/static/assets/stylesheets/reset.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="http://projectchronos.org/static/assets/stylesheets/style.css" media="screen">
+        <link rel="shortcut icon" href="static/assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="static/assets/stylesheets/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/static/assets/stylesheets/style.css" media="screen">
 
 
-	    <script src="http://projectchronos.org/static/assets/javascript/libs/jquery-1.11.1.min.js"></script>
+	    <script src="/static/assets/javascript/libs/jquery-1.11.1.min.js"></script>
 
         <style>
 
@@ -60,7 +57,7 @@ html = '''
                 </ul>
             </nav>
 
-        <section class="home--introduction" style="margin-bottom:0 px;">
+        <section class="home--introduction" style="margin-bottom:0;">
             <div class="introduction--image"></div>
 
             <div class="site--content">
@@ -69,7 +66,7 @@ html = '''
                 </div>
             </div>
         </section>
-        <section class="home--about site--content wysiwyg" style="border-top:-12em;">
+        <section class="home--about site--content wysiwyg" style="border-top:-12 em;">
              <h1>Welcome to Project Chronos</h1>
              <p> This platform originates from the Hackathon <a target="_blank" href="http://2014.spaceappschallenge.org/challenge/space-mission-roadmap/">SpaceApps Challenge 2014</a>
                         and integrates information about space missions from NASA, ESA, and JAXA with our learn-by-playing paradigm to let you dive into space knowledge in an exciting way!
@@ -116,23 +113,11 @@ html = '''
          <!-- CMS Placeholder -->
          <!-- CMS Block Content -->
 
-
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-50314218-1', 'spacexplore.it');
-          ga('send', 'pageview');
-        </script>
-
             <footer class="site--footer">
                 <ul class="site--supporters">
                     <li>
                         <a target="_blank" href="https://2014.spaceappschallenge.org/project/chronos/">
-                            <img src="http://projectchronos.org/static/assets/images/space-logo.png" alt="" width="109" height="100">
+                            <img src="/static/assets/images/space-logo.png" alt="" width="109" height="100">
                         </a>
                     </li>
                 </ul>
@@ -144,15 +129,8 @@ html = '''
             </footer>
         </div> <!-- CLOSE CONTAINER -->
 
-        <script src="http://projectchronos.org/static/assets/javascript/libs/jquery-scrolltofixed.min.js"></script>
-        <script src="http://projectchronos.org/static/assets/javascript/header.js"></script>
-
-
-
-
-
-
+        <script src="/static/assets/javascript/libs/jquery-scrolltofixed.min.js"></script>
+        <script src="/static/assets/javascript/header.js"></script>
 
     </body> <!-- CLOSE BODY -->
 </html>
-'''
