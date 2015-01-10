@@ -19,4 +19,4 @@ try:
 except IOError:
   pass
 
-from app import app as application
+from pageapp import app as application
