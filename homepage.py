@@ -37,6 +37,16 @@ html = '''
 
     <!-- BODY -->
     <body class="home" >
+    <!-- FB Script -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=154575411336636";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
         <div id="container">
             <header class="site--header">
                 <div class="site--content">
@@ -52,19 +62,6 @@ html = '''
                 </ul>
             </nav>
 
-
-
-<!-- FB Script -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=154575411336636";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- -->
-
         <section class="home--introduction" style="margin-bottom:0 px;">
             <div class="introduction--image"></div>
 
@@ -72,15 +69,6 @@ html = '''
                 <div class="introduction--content">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum </p>
                 </div>
-
-                <p style="margin-top: 25px;text-align:right;"><span class='st_facebook_large' displayText='Facebook'></span>
-                <span class='st_twitter_large' st_title=" " st_message="Project Chronos - A Learning Platform For Space-related Know-How" st_via="XplorationApp" displayText='Tweet'></span>
-                <span class='st_googleplus_large' st_title=" " st_message="Project Chronos - A Learning Platform For Space-related Know-How" displayText='Google +'></span>
-                <span class='st_sharethis_large' displayText='ShareThis'></span>
-                <a href="https://twitter.com/XplorationApp" class="twitter-follow-button" data-show-count="false" data-size="medium">@XplorationApp</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                <span class="fb-like" data-href="https://www.facebook.com/pages/Xploration/241831932686033" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></span></p>
-
             </div>
         </section>
         <section class="home--about site--content wysiwyg" style="border-top:-12em;">
@@ -102,6 +90,18 @@ html = '''
                 efforts and outcomes of this open global community, and believe that anyone can participate and give her/his own contribution.</p>
             <p>We are starting a funding round to promote the project, any kind of support from you is greatly valuable to us. <a href="/development">Write us</a> or follow the social accounts.</p>
         </section>
+
+        <!-- Social networks buttons -->
+        <section class="home--about site--content wysiwyg">
+            <p style="margin-top: 25px;text-align:right;"><span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_twitter_large' st_title=" " st_message="Project Chronos - A Learning Platform For Space-related Know-How" st_via="XplorationApp" displayText='Tweet'></span>
+            <span class='st_googleplus_large' st_title=" " st_message="Project Chronos - A Learning Platform For Space-related Know-How" displayText='Google +'></span>
+            <span class='st_sharethis_large' displayText='ShareThis'></span>
+            <a href="https://twitter.com/XplorationApp" class="twitter-follow-button" data-show-count="false" data-size="medium">@XplorationApp</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <span class="fb-like" data-href="https://www.facebook.com/pages/Xploration/241831932686033" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></span></p>
+        </section>
+        <!-- -->
 
         <script type="text/javascript">var switchTo5x=true;</script>
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
