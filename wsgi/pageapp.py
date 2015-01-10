@@ -1,7 +1,7 @@
 __author__ = 'lorenzo'
 
 from flask import Flask
-from homepage import html
+from wsgi.homepage import html
 
 
 app = Flask(__name__)
