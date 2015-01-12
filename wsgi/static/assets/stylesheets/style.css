@@ -276,7 +276,10 @@ html,body{
 				padding-top: .1em;
 				//text-align: center;
 			}
-
+        /* Form specific */
+        .subscribe-submit {
+            cursor:pointer;
+        }
 /* 
 	Mobile adaptations 
 	kicking in at 640px or less of width, these should make the type a more 

@@ -13,6 +13,7 @@ else:
 
 print(wdir)
 
+
 class NewsForm(Form):
     pass
 
