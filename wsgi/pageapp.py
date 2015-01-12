@@ -7,18 +7,16 @@ from flask import render_template, redirect, url_for, request
 from flask.ext.wtf import Form
 
 if 'OPENSHIFT_DATA_DIR' in os.environ:
-    wdir = os.environ['OPENSHIFT_DATA_DIR']
+    store = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'newsletter.save')
 else:
-    wdir = os.path.dirname(__file__)
-
-print(wdir)
+    store = os.path.join(os.path.dirname(__file__), 'newsletter.save')
 
 
 class NewsForm(Form):
     pass
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 app.config.from_object('config')
 
 @app.route("/")
@@ -31,10 +29,10 @@ def hello():
 @app.route("/subscribe", methods=['POST'])
 def subscribe():
     mail = request.form['email']
-    data = open(wdir+'newsletter.save').read()
+    data = open(store).read()
     position = data.find(mail)
     if position == -1:
-        with open(wdir+'newsletter.save', 'a') as f:
+        with open(store, 'a') as f:
             f.write(mail+' \n')
         return redirect(url_for('.hello', message=message_ok))
 
