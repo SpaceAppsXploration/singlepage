@@ -6,8 +6,11 @@ from flask import Flask
 from flask import render_template, redirect, url_for, request
 from flask.ext.wtf import Form
 
+if 'OPENSHIFT_DATA_DIR' in os.environ:
+    wdir = os.environ['OPENSHIFT_DATA_DIR']
+else:
+    wdir = os.path.dirname(__file__)
 
-wdir = os.path.join(os.path.dirname(os.path.dirname(__file__)), os.path.join('data'))
 print(wdir)
 
 class NewsForm(Form):
