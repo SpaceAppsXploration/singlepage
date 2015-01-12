@@ -215,7 +215,7 @@ html,body{
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url( '../images/upside-down-earth.jpg' );
+			background-image: url('../images/home/upside-down-earth.jpg');
 			position: relative;
 			margin-bottom: 2em;
 		}
@@ -223,7 +223,7 @@ html,body{
 				margin-top: 2em;
 				font-size: 1.4em;
 				line-height: 1.2;
-				color: #DDDDDD;
+				color: #92ADCB; /* Palette: Sun */
 				text-align: center;
 			}
 				.home--introduction .introduction--content h1{
@@ -236,7 +236,14 @@ html,body{
 			margin-bottom: 2em;
 			top: -12em;
 		}
-		
+
+        /* Section specific */
+        .newsletter {
+            top: -6em;
+            background-image: url('../images/home/img_exploration.png');
+            color: #6A7E7A;
+        }
+
 		/* blog specific */
 		body.blog{
 			background: #686774;
@@ -277,8 +284,29 @@ html,body{
 				//text-align: center;
 			}
         /* Form specific */
+        .subscribe-input{
+            font-size: 1.3em !important;
+            padding: 0.3em 0.4em 0.3em !important;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: 1px solid #9B969B;
+        }
         .subscribe-submit {
             cursor:pointer;
+            padding: 0.3em 0.4em 0.3em !important;
+            font-size: 1.3em !important;
+            background-color: #9B969B;
+            font-weight: bold;
+            text-shadow: 1px 1px #9B969B;
+            color: #ffffff;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: 1px solid #9B969B;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+            -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+            -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
         }
 /* 
 	Mobile adaptations 
