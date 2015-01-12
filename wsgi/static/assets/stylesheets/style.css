@@ -155,7 +155,7 @@ html,body{
 						border-bottom: 2px solid #DDDDDD;
 					}
 
-		.site--content{
+		.site--content , .subscribe-form{
 			width: 100%;
 			max-width: 40em;
 			box-sizing: border-box;
@@ -228,6 +228,8 @@ html,body{
 			}
 				.home--introduction .introduction--content h1{
 					text-transform: uppercase;
+                    font-size: 1.8em;
+                    letter-spacing: 0.75em;
 				}
 		.home--about{
 			position: relative;
