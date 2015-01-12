@@ -61,7 +61,7 @@
         </section>
         <section class="home--about site--content wysiwyg">
              {%if message%}
-                <p style="color:#6A7E7A;">You subscribed the newsletter. Wait for confirmation email. Thanks for your interest!</p>
+                <p style="color:#6A7E7A;">{{message}}</p>
              {% endif %}
              <h1>What is space-data.</h1>
              <p>Agencies&apos; open data from orbital and beyond missions, webpages and articles, scientific papers, any other information connected to space exploration
@@ -88,7 +88,7 @@
             <h1>Subscribe to newsletter.</h1>
             <p>Receive news and beta-testing updates directly in your inbox</p>
             {%if message%}
-            <p style="color:#6A7E7A;">You subscribed the newsletter. Wait for confirmation email.</p>
+            <p style="color:#6A7E7A;">{{message}}</p>
             {% else %}
             <form action="/subscribe" method="post" class="subscribe-form">
               {{ form.hidden_tag() }}
