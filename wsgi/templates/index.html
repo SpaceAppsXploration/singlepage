@@ -60,6 +60,19 @@
                 </div>
             </div>
         </section>
+        <section class="home--introduction site--content wysiwyg newsletter">
+            <h1>Subscribe to newsletter.</h1>
+            <p>Receive news and beta-testing updates directly in your inbox</p>
+            {%if message%}
+            <p style="color:#6A7E7A;">{{message}}</p>
+            {% else %}
+            <form action="/subscribe" method="post" class="subscribe-form">
+              {{ form.hidden_tag() }}
+              <input type="email" name="email" class="subscribe-input" placeholder="Email address">
+              <button type="submit" class="subscribe-submit">Subscribe</button>
+            </form>
+            {% endif %}
+        </section>
         <section class="home--about site--content wysiwyg whatis">
              {%if message%}
                 <p style="color:#6A7E7A;">{{message}}</p>
@@ -84,19 +97,6 @@
                 by private citizens, with the goal of collecting and sharing data. Space is too vast to have restricted access:
                 cheap technologies (micro-satellites, citizen science, open research, private launchers), multidisciplinarity,
                 and always more specialized knowledge are taking part to the race.</p>
-        </section>
-        <section class="home--introduction site--content wysiwyg newsletter">
-            <h1>Subscribe to newsletter.</h1>
-            <p>Receive news and beta-testing updates directly in your inbox</p>
-            {%if message%}
-            <p style="color:#6A7E7A;">{{message}}</p>
-            {% else %}
-            <form action="/subscribe" method="post" class="subscribe-form">
-              {{ form.hidden_tag() }}
-              <input type="email" name="email" class="subscribe-input" placeholder="Email address">
-              <button type="submit" class="subscribe-submit">Subscribe</button>
-            </form>
-            {% endif %}
         </section>
 
         <!-- Social networks buttons -->

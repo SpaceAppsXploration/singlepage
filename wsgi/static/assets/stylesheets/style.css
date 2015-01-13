@@ -215,7 +215,7 @@ html,body{
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url('../images/home/img_marketing3.png');
+			background-image: url('../images/home/upside-down-earth.jpg');
 			position: relative;
 			margin-bottom: 2em;
 		}
@@ -239,7 +239,7 @@ html,body{
 
         /* Section specific */
         .newsletter {
-            top: -6em;
+            top: -14em;
             background-image: url('../images/home/img_exploration.png');
             color: #6A7E7A;
         }
