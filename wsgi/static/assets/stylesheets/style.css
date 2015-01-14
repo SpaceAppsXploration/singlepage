@@ -236,13 +236,28 @@ html,body{
 			top: -12em;
 		}
 
+        .quote {
+            font-style: italic;
+            font-size: 0.75em;
+            padding: 1em;
+            text-align: right;
+            letter-spacing: 0.1em;
+        }
+
         /* Section specific */
         .newsletter {
             top: -14em;
-            background-image: url('../images/home/img_exploration.png');
-            color: #6A7E7A;
+            color: #9B969B;
         }
-
+        .whatis {
+            color: #9B969B;
+        }
+        .whatcando {
+            color: #9B969B;
+        }
+        .whatgoals {
+            color: #9B969B;
+        }
 		/* blog specific */
 		body.blog{
 			background: #686774;
