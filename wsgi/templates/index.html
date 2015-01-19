@@ -61,19 +61,6 @@
                 </div>
             </div>
         </section>
-        <section class="home--about site--content wysiwyg newsletter">
-            <h1>Subscribe to the newsletter.</h1>
-            <p>Receive news and stay updated about the project.</p>
-            {%if message%}
-            <p style="color:#6A7E7A;">{{message}}</p>
-            {% else %}
-            <form action="/subscribe" method="post" class="subscribe-form">
-              {{ form.hidden_tag() }}
-              <input type="email" name="email" class="subscribe-input" placeholder="Email address">
-              <button type="submit" class="subscribe-submit">Subscribe</button>
-            </form>
-            {% endif %}
-        </section>
         <section class="home--about site--content wysiwyg whatcando">
             <h1>What is Pramantha.</h1>
             <p>Pramantha  is a solution to pave the way towards open and distributed space exploration through data analysis and web applications.<br/>
@@ -102,6 +89,19 @@
                 restricted access: cheap technologies (micro-satellites, citizen science, open research, private launchers), multidisciplinarity,
                 and always more specialized knowledge are taking part to the adventure.<br/>
                 With the support of users, the team of researchers developers and artists we gathered is willing to shape these energies through Pramantha.</p>
+        </section>
+        <section class="home--about site--content wysiwyg newsletter">
+            <h1>Subscribe to the newsletter.</h1>
+            <p>Receive news and stay updated about the project.</p>
+            {%if message%}
+            <p style="color:#6A7E7A;">{{message}}</p>
+            {% else %}
+            <form action="/subscribe" method="post" class="subscribe-form">
+              {{ form.hidden_tag() }}
+              <input type="email" name="email" class="subscribe-input" placeholder="Email address">
+              <button type="submit" class="subscribe-submit">Subscribe</button>
+            </form>
+            {% endif %}
         </section>
 
         <!-- Social networks buttons -->
