@@ -246,13 +246,13 @@ html,body{
 
         /* Section specific */
         .newsletter {
-            top: -14em;
             color: #9B969B;
         }
         .whatis {
             color: #9B969B;
         }
         .whatcando {
+            top: -14em;
             color: #9B969B;
         }
         .whatgoals {
