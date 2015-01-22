@@ -249,6 +249,7 @@ html,body{
 		.home--about{
 			position: relative;
 			margin-bottom: 2em;
+                        text-align:center;
 			/*top: -12em;*/
 		}
                  .home--about > p > span {
@@ -279,7 +280,6 @@ html,body{
             color: #9B969B;
         }
         .newsletter, .social--links{
-            text-align:center;
             color: #9B969B;
             top: -9em;
         }
