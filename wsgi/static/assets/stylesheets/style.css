@@ -1,6 +1,16 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
 
+@font-face {
+  font-family: 'TestPilotBold';
+  src: url('Test Pilot Collective - OCRK Bold Square.ttf');
+}
+
+@font-face {
+  font-family: 'TestPilotLight';
+  src: url('Test Pilot Collective - OCRK Light Square.ttf');
+}
+
 /* BASE STYLINGS */
 
 html,body{
@@ -15,7 +25,8 @@ html,body{
 		background: #10162F;
 	}
 
-	h1{		
+	h1{
+        font-family: TestPilotLight, Inconsolata, monospace ;
 		font-size: 1.3em;
 		font-weight: 600;
 		letter-spacing: 3px;
@@ -226,15 +237,24 @@ html,body{
 				text-align: center;
 			}
 				.home--introduction .introduction--content h1{
+                    font-family: TestPilotLight, Inconsolata, monospace ;
 					text-transform: uppercase;
-                    font-size: 1.8em;
+                    font-size: 1.5em;
                     letter-spacing: 0.75em;
 				}
+                .home--introduction .introduction--content p {
+                    font-family: TestPilotLight, Inconsolata, monospace;
+                    font-size: 0.8em;
+                }
 		.home--about{
 			position: relative;
-			margin-bottom: 2em;
+			/*margin-bottom: 2em;*/
 			top: -12em;
 		}
+                 .home--about > p > span {
+                     font-family: TestPilotBold, Inconsolata, monospace;
+                     font-size: 1.1em;
+                 }
 
         .quote {
             font-style: italic;
@@ -244,9 +264,11 @@ html,body{
             letter-spacing: 0.1em;
         }
 
+
         /* Section specific */
         .newsletter {
             color: #9B969B;
+            padding-top: 5em;
         }
         .whatis {
             color: #9B969B;
