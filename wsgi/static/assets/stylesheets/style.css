@@ -249,7 +249,7 @@ html,body{
 		.home--about{
 			position: relative;
 			margin-bottom: 2em;
-                        text-align:center;
+            text-align:center;
 			/*top: -12em;*/
 		}
                  .home--about > p > span {
