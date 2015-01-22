@@ -248,8 +248,8 @@ html,body{
                 }
 		.home--about{
 			position: relative;
-			/*margin-bottom: 2em;*/
-			top: -12em;
+			margin-bottom: 2em;
+			/*top: -12em;*/
 		}
                  .home--about > p > span {
                      font-family: TestPilotBold, Inconsolata, monospace;
@@ -266,26 +266,35 @@ html,body{
 
 
         /* Section specific */
-        .newsletter {
-            color: #9B969B;
-            padding-top: 5em;
-        }
-        .whatis {
-            color: #9B969B;
-        }
         .whatcando {
             top: -14em;
             color: #9B969B;
         }
-        .whatgoals {
+        .whatis {
+            top: -14em;
             color: #9B969B;
         }
+        .whatgoals {
+            top: -14em;
+            color: #9B969B;
+        }
+        .newsletter, .social--links{
+            color: #9B969B;
+            top: -9em;
+        }
+
 		/* blog specific */
-		body.blog{
+		.blog{
 			background: #686774;
 		}
+            .blog > h1 {
+                padding-bottom: 1em;
+                padding-top: 1em;
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
 		.blog--post{
-			margin-bottom: 3em;			
+			margin-bottom: 3em;
 		}					
 			.post--header{
 				position: relative;
