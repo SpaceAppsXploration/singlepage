@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--[if IE 8 ]><html class="ie ie8" lang="it"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="it" class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+
+        <title>Pramantha - Space Exploration</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	    <meta name="keywords" content="explore space planets star journey satellites exploration solar system simulation play learning NASA ESA JAXA spacecraft scientific payload bus sensor maps rocket">
+	    <meta name="description" content="explore space planets star journey satellites exploration solar system simulation play learning NASA ESA JAXA spacecraft scientific payload bus sensor maps rocket">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="static/assets/images/favicon.png">
+
+
+    </head>
+
+    <body>
+            <div id="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <header class="site--header">
+                        <h4 align="left"><b><u>Example:</u> This is a partial network:
+                            one mission (Clementine) and one subject
+                            (19: "Spacecraft Instrumentation and Astrionics")
+                            on a total of 300 missions and 53 subjects in the taxonomy:</b></h4>
+                        </header>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <u>Legend:</u>
+                            <ul>
+                                <li>blue: dbpedia document</li>
+                                <li>red: keyword</li>
+                                <li>orange: event</li>
+                                <li>lilac: web pages</li>
+                                <li>pale-blue: missions</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <div id="diagram-1" class="col-md-12"></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <p><u>Instructions:</u></p>
+                        <ul>
+                            <li>zoom with mouse-wheel</li>
+                            <li>on hover for node title</li>
+                            <li>click on node for first level relations</li>
+                            <li>click on node again to go back</li>
+                            <li>click-and-drag to pan</li>
+                        </ul>
+                        <p id="infos"></p>
+                    </div>
+                </div>
+            </div>
+
+        <script src="/static/assets/javascript/libs/jquery-1.11.1.min.js"></script>
+        <script src="/static/dataviz/mockdata.js" charset="utf-8"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="/static/dataviz/forcednet.js" charset="utf-8"></script>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" media="screen">
+        <link rel="stylesheet" type="text/css" href="static/assets/stylesheets/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/static/assets/stylesheets/style.css" media="screen">
+
+        <style>
+            .row{
+                margin-bottom:2%;
+            }
+            .node {
+                stroke: #fff;
+                stroke-width: 1.5px;
+            }
+            .link {
+                stroke: #999;
+                stroke-opacity: .6;
+            }
+            div .tagsClass {
+                float:left;
+                width:99%;
+                padding: 0 0;
+            }
+            #infos {
+                margin-top:30px;
+                padding-top:5px;
+                color: #999;
+                display:none;
+                border-top: 1px dotted;
+            }
+
+
+        </style>
+    </body>
+</html>

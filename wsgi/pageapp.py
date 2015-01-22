@@ -16,7 +16,7 @@ class NewsForm(Form):
     pass
 
 app = Flask(__name__)
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 app.config.from_object('config')
 
 @app.route("/")
@@ -25,6 +25,10 @@ def hello():
         return render_template('index.html', message=request.args.get('message'))
     form = NewsForm()
     return render_template('index.html', form=form)
+
+@app.route("/graph19")
+def testnode():
+    return render_template('testsonly.html')
 
 @app.route("/subscribe", methods=['POST'])
 def subscribe():
