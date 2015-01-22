@@ -240,7 +240,7 @@ html,body{
                     font-family: TestPilotLight, Inconsolata, monospace ;
 					text-transform: uppercase;
                     font-size: 1.5em;
-                    letter-spacing: 0.75em;
+                    letter-spacing: 0.3em;
 				}
                 .home--introduction .introduction--content p {
                     font-family: TestPilotLight, Inconsolata, monospace;
@@ -279,6 +279,7 @@ html,body{
             color: #9B969B;
         }
         .newsletter, .social--links{
+            text-align:center;
             color: #9B969B;
             top: -9em;
         }
