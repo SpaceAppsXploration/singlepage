@@ -1,6 +1,9 @@
 /**
  * Created by lorenzo on 20/01/15.
+ * Thanks to http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/
  */
+
+
 //Constants for the SVG
 //Constants for the SVG
 var width = 700,

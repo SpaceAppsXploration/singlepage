@@ -6,18 +6,20 @@ from flask import Flask
 from flask import render_template, redirect, url_for, request
 from flask.ext.wtf import Form
 
+app = Flask(__name__)
+app.config.from_object('config')
+
+
 if 'OPENSHIFT_DATA_DIR' in os.environ:
     store = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'newsletter.save')
+    app.config['DEBUG'] = False
 else:
     store = os.path.join(os.path.dirname(__file__), 'newsletter.save')
+    app.config['DEBUG'] = True
 
 
 class NewsForm(Form):
     pass
-
-app = Flask(__name__)
-app.config['DEBUG'] = True
-app.config.from_object('config')
 
 @app.route("/")
 def hello():
