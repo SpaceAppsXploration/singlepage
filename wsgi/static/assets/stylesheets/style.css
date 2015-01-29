@@ -354,6 +354,13 @@ html,body{
             -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
             -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
         }
+
+        .email > h1 {
+                padding-bottom: 1em;
+                padding-top: 1em;
+                font-size: 2em;
+                letter-spacing: 2px;
+        }
 /* 
 	Mobile adaptations 
 	kicking in at 640px or less of width, these should make the type a more 
