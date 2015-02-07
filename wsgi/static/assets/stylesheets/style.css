@@ -196,11 +196,13 @@ html,body{
 		}	
 			.site--footer .site--supporters{
 				float: left;
-				height: 2em;
+                line-height: 3em;
 			}
 				.site--footer .site--supporters li{
 					display: inline-block;
-					height: 2em
+					height: 2em;
+                    font-size: 0.75em;
+                    padding: 0;
 				}
 						.site--footer .site--supporters li img{
 							max-height: 100%;
