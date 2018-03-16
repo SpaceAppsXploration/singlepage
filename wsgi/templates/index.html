@@ -72,9 +72,6 @@
                the next months to give users the possibility for a personal look into Space through data-visualization technologies and games.</p>
         </section>
         <section class="home--about site--content wysiwyg whatis">
-             {%if message%}
-                <p style="color:#6A7E7A;">{{message}}</p>
-             {% endif %}
              <h1>What are space data.</h1>
              <p>We are creating an integrated <span class="highlight">datacloud infrastructure</span> that combines data retrieved by NASA, ESA and JAXA’s orbital
                  and non-orbital missions, sensors, relevant scientific knowledge from physics and engineering, unstructured and textual
@@ -89,19 +86,6 @@
                 restricted access: cheap technologies as <span class="highlight">micro-satellites, citizen science, open research, private launchers</span>, multidisciplinarity,
                 and always more specialized knowledge are taking part to the adventure.<br/>
                 With the support of users, the team of researchers developers and artists we gathered is willing to shape these energies through Pramantha.</p>
-        </section>
-        <section class="home--about site--content wysiwyg newsletter">
-            <h1>Subscribe to the newsletter.</h1>
-            <p>Receive news and stay updated about the project.</p>
-            {%if message%}
-            <p style="color:#6A7E7A;">{{message}}</p>
-            {% else %}
-            <form action="/subscribe" method="post" class="subscribe-form">
-              {{ form.hidden_tag() }}
-              <input type="email" name="email" class="subscribe-input" placeholder="Email address">
-              <button type="submit" class="subscribe-submit">Subscribe</button>
-            </form>
-            {% endif %}
         </section>
 
         <!-- Social networks buttons -->
@@ -133,6 +117,51 @@
          <!-- CMS Block Content -->
     <section class="site--content blog">
         <h1>News:</h1>
+        <article class="blog--post">
+            <header class="post--header">
+                <img src="/static/assets/images/outer-space.jpg" alt="">
+                <div class="post--header-text">
+                    <h1 class="post--title">Director working with Astrosat</h1>
+                </div>
+            </header>
+            <section class="post--content wysiwyg">
+                <p>Pramantha's Director, Lorenzo, joined Astrosat for one year of Commercial Space and Geospatial development.</p>
+            </section>
+            <footer class="post--meta">
+                <span class="post--date">On: 27.3.2017</span>
+                <span class="post--author">By: Pramantha</span>
+            </footer>
+        </article>
+        <article class="blog--post">
+            <header class="post--header">
+                <img src="/static/assets/images/space.jpg" alt="">
+                <div class="post--header-text">
+                    <h1 class="post--title">Director get into platform development for IoT devices</h1>
+                </div>
+            </header>
+            <section class="post--content wysiwyg">
+                <p>Pramantha's Director, Lorenzo, joined Atooma/Resonance AI. Resonance AI enters 500 Startups Incubator SF, CA.</p>
+            </section>
+            <footer class="post--meta">
+                <span class="post--date">On: 2.3.2017</span>
+                <span class="post--author">By: Pramantha</span>
+            </footer>
+        </article>
+        <article class="blog--post">
+            <header class="post--header">
+                <img src="/static/assets/images/outer-space.jpg" alt="">
+                <div class="post--header-text">
+                    <h1 class="post--title">Pramantha's concepts started to be developed</h1>
+                </div>
+            </header>
+            <section class="post--content wysiwyg">
+                <p>Pramantha's Director, Lorenzo, follows the implementation of <a href="https://github.com/HTTP-APIs" target="_blank">W3C Hydra</a> as volunteer and maintainer.</p>
+            </section>
+            <footer class="post--meta">
+                <span class="post--date">On: 1.1.2017</span>
+                <span class="post--author">By: Pramantha</span>
+            </footer>
+        </article>
         <article class="blog--post">
             <header class="post--header">
                 <img src="/static/assets/images/space.jpg" alt="">
@@ -447,11 +476,7 @@
     </section>
     <section class="site--content wysiwyg email">
         <h1>Email Us</h1>
-        <p><a href="mailto:info@pramantha.net">Introduce yourself and request your copy of business plan</a></p>
-        <p><a href="mailto:giacomo@pramantha.net">Contact Giacomo, Chief of Executives</a></p>
-        <p><a href="mailto:jacopo@pramantha.net">Contact Jacopo, Chief of Research</a></p>
-        <p><a href="mailto:lorenzo@pramantha.net">Contact Lorenzo, Chief of Technology</a></p>
-         <p><a href="mailto:stefano@pramantha.net">Contact Stefano, Chief of Business Development</a></p>
+        <p><a href="mailto:lorenzo@pramantha.net">Contact Lorenzo, Director</a></p>
     </section>
 
 
@@ -465,7 +490,7 @@
                 </ul>
                 <div class="site--credits">
                     <span class="small-text">
-                        All rights to Pramantha Ltd - <a href="mailto:info@pramantha.net">info@pramantha.net</a>
+                        All rights to Pramantha Ltd - <a href="mailto:info@pramantha.net">info@pramantha.net</a> and respective owners.
                     </span>
                 </div>
             </footer>
