@@ -6,5 +6,5 @@ setup(name='PramanthaSinglePage',
       author='Lorenzo',
       author_email='info@pramantha.net',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['Flask==0.12.3'],
+      install_requires=[],
      )

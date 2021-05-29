@@ -1,12 +1,9 @@
-# app.yaml
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python38
+entrypoint: uwsgi --http-socket :8080 --wsgi-file wsgi/pageapp.py --callable app --master --processes 1 --threads 2
+instance_class: F1
 
-handlers:
-- url: /.*
-  script: wsgi.pageapp.app
-
-libraries:
-- name: flask
-  version: "0.12"
+automatic_scaling:
+  target_cpu_utilization: 0.90
+  min_instances: 1
+  max_instances: 1
+  max_concurrent_requests: 15
